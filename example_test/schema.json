@@ -1,0 +1,16 @@
+{
+  "UserObjectType": {
+    "id": "Int",
+    "username": "String",
+    "firstName": "String",
+    "lastName": "String",
+    "avatar": "AvatarObjectType",
+    "dateCreated": "DateTime",
+    "notificationPreferences": "GenericScalar"
+  },
+  "AvatarObjectType": { "id": "Int", "avatarUrl": "String" },
+  "scalar": ["DateTime", "GenericScalar"],
+  "Query": {
+    "GetCurrentUser": "UserObjectType"
+  }
+}
