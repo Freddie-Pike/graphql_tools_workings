@@ -64,7 +64,7 @@ describe("graphql-tools", () => {
       }),
     };
 
-    const mocks = mergeResolvers(globalMocks, customMocks);
+    const mocks = mergeResolvers([globalMocks, customMocks]);
 
     // Make a GraphQL schema with no resolvers
     const schema = makeExecutableSchema({ typeDefs: schemaString });
