@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "@apollo/client": "^3.3.6",
+    "@babel/plugin-transform-spread": "^7.13.0",
     "@graphql-tools/json-file-loader": "^6.2.6",
     "@graphql-tools/load": "^6.2.7",
     "@graphql-tools/merge": "^6.2.11",
@@ -24,6 +25,7 @@
     "@testing-library/user-event": "^12.1.10",
     "classnames": "^2.2.6",
     "graphql": "^15.5.0",
+    "graphql-tag": "^2.11.0",
     "graphql-tools": "^7.0.4",
     "path": "^0.12.7",
     "react": "^16.8.6",
@@ -36,6 +38,7 @@
     "autoprefixer": "^8.5.0",
     "babel-jest": "^25.5.1",
     "babel-loader": "^8.0.6",
+    "babel-plugin-transform-es2015-spread": "^6.22.0",
     "babel-preset-react": "^6.24.1",
     "core-js": "^3.6.4",
     "css-loader": "^0.28.4",

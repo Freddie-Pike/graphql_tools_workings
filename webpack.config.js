@@ -14,7 +14,12 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.jsx?/,
+        test: /\.graphql$/,
+        exclude: /node_modules/,
+        loader: 'graphql-tag/loader',
+      },
+      {
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: "babel-loader",
       },
