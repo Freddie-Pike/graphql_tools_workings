@@ -13,7 +13,7 @@ describe("UserButton", () => {
     onClickMock = jest.fn();
   });
 
-  it("handles user click.", () => {
+  it("Renders with first and last name.", () => {
     render(
       <ApolloMockingProvider>
         <UserButton />
