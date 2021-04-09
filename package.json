@@ -8,7 +8,8 @@
     "test:watch": "jest --watch --runInBand",
     "build": "webpack -p --progress --config webpack.config.js",
     "dev-build": "webpack --progress -d --config webpack.config.js",
-    "watch": "webpack --progress -d --config webpack.config.js --watch"
+    "watch": "webpack --progress -d --config webpack.config.js --watch",
+    "generate": "graphql-codegen"
   },
   "author": "",
   "license": "ISC",
@@ -35,6 +36,8 @@
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
+    "@graphql-codegen/cli": "^1.21.3",
+    "@graphql-codegen/introspection": "^1.18.1",
     "autoprefixer": "^8.5.0",
     "babel-jest": "^25.5.1",
     "babel-loader": "^8.0.6",

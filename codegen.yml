@@ -1,0 +1,6 @@
+schema: 
+  - my-schema.graphql
+generates: 
+  introspection.json:
+    plugins:
+      - introspection

@@ -1,0 +1,18 @@
+type AvatarObjectType {
+  id: Int
+  avatarUrl: String
+}
+scalar DateTime
+scalar GenericScalar
+type UserObjectType {
+  id: Int
+  username: String
+  firstName: String
+  lastName: String
+  avatar: AvatarObjectType
+  dateCreated: DateTime
+  notificationPreferences: GenericScalar
+}
+type Query {
+  GetCurrentUser: UserObjectType
+}

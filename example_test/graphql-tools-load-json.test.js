@@ -2,7 +2,7 @@ import { addMocksToSchema } from "@graphql-tools/mock";
 import { makeExecutableSchema } from "@graphql-tools/schema";
 import { JsonFileLoader } from "@graphql-tools/json-file-loader";
 import { loadSchema } from "@graphql-tools/load";
-import schema from "./schema.json";
+import schema from "../introspection.json";
 
 import { graphql } from "graphql";
 
