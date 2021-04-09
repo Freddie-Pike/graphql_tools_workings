@@ -14,8 +14,13 @@ const GET_CURRENT_USER = gql`
 `;
 
 function UserButton({ ...props }) {
-  const { data: userData } = useQuery(GET_CURRENT_USER);
-  return <Button {...props}>{userData.firstName} {userData.lastName}'s Button</Button>;
+  const { data: userData, loading } = useQuery(GET_CURRENT_USER);
+  let buttonText = "Loading...";
+
+  if (!loading) {
+    buttonText = `${userData.firstName} ${userData.lastName}'s Button`;
+  }
+  return <Button {...props}>{buttonText}</Button>;
 }
 
 UserButton.propTypes = {
