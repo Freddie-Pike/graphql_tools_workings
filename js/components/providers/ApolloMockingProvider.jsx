@@ -47,7 +47,7 @@ const ApolloMockingProvider = ({ children }) => {
   });
 
   const client = new ApolloClient({
-    link: new SchemaLink({ schemaWithMocks }),
+    link: new SchemaLink({ schema: schemaWithMocks }),
     cache: new InMemoryCache(),
   });
 
