@@ -5,7 +5,7 @@ import { useQuery } from "@apollo/client";
 
 import Button from "./Button";
 
-const GET_CURRENT_USER = gql`
+export const GET_CURRENT_USER = gql`
   query GetCurrentUser {
     id
     firstName
